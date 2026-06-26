@@ -2,17 +2,16 @@
   "name": "backend_devlopment",
   "version": "1.0.0",
   "description": "learning backend for 1st time",
-  "types": "module",
+  "type": "module",
   "keywords": [
     "javascript",
     "backend"
   ],
   "license": "ISC",
   "author": "Abhijit",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
