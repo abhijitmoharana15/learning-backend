@@ -18,4 +18,15 @@ app.use(express.static("public"))  //static stor the file,folder,image in their 
 app.use(cookieParser())  //use for cookies that come from frontend or from browser 
 
 
+//routs import 
+
+import userRouter from "./routes/user.routs.js"
+
+
+// routs declaration 
+  app.use("/api/v1/users",userRouter)
+
+
+
+//http:localhost:8000/api/v1/users/register
 export {app};
