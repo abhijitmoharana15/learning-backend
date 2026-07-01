@@ -43,7 +43,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   //3.check user alrady exist : userName and Email
 
-  const existedUser = User.findOne({  // User is referance of db or it talk to db and .findone it give the 1st match mean if email match it return if name match it return which match 1st it return
+  const existedUser = await User.findOne({  // User is referance of db or it talk to db and .findone it give the 1st match mean if email match it return if name match it return which match 1st it return
     $or: [{ username }, { email }]  // User check in mongo db that the username or email send by frontent and and store in db is same(any one of them is match ) then return true 
   })
 
